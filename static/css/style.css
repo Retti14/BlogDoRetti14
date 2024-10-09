@@ -5,30 +5,27 @@ body {
   padding: 0;
   background-color: #f4f4f4;
 }
-
-/* Estilo para o cabeçalho */
-header {
+header top {
   background: #333;
   color: #fff;
   padding: 10px 0;
-  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /* Estilo para a navegação */
-nav {
+header nav {
   background: #444;
   color: #fff;
-  padding: 10px 0;
+  padding: 5px 0;
+  
 }
 
 nav ul {
+  display: flex;
   list-style: none;
+  justify-content: space-evenly;
   padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 15px;
 }
 
 nav ul li a {
@@ -56,17 +53,21 @@ footer {
   width: 100%;
 }
 
-/* Estilo para links dentro do main */
-main a {
-  color: #007bff;
-  text-decoration: none;
+.botao-redondo {
+  width: 9rem; /* Largura do botão */
+  height: 45px; /* Altura do botão */
+  background-color: #333; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: none; /* Sem borda */
+  border-radius: 50%; /* Forma redonda */
+  cursor: pointer; /* Cursor de mão ao passar o mouse */
+  display: flex; /* Para centralizar o conteúdo */
+  align-items: center; /* Alinhamento vertical */
+  justify-content: center; /* Alinhamento horizontal */
+  font-size: 20px; /* Tamanho do ícone */
+  transition: background-color 0.3s; /* Efeito de transição */
 }
 
-main a:hover {
-  text-decoration: underline;
-}
-
-/* Estilo para parágrafos */
-main p {
-  margin: 15px 0;
+.botao-redondo:hover {
+  background-color: #4b4b4b; /* Cor de fundo ao passar o mouse */
 }
