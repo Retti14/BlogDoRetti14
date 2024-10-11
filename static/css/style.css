@@ -13,12 +13,23 @@ header top {
   justify-content: space-evenly;
 }
 
+@media (max-width: 800px) {
+  header top {
+    flex-direction: column;
+}
+}
+
 /* Estilo para a navegação */
 header nav {
   background: #444;
   color: #fff;
   padding: 5px 0;
   
+}
+@media (max-width: 800px) {
+  header nav {
+    flex-direction: column;
+}
 }
 
 nav ul {
@@ -70,5 +81,9 @@ footer {
 }
 
 .botao-redondo:hover {
-  background-color: #4b4b4b; /* Cor de fundo ao passar o mouse */
+  background-color: #444; /* Cor de fundo ao passar o mouse */
+}
+
+#logo{
+  height: 50px;
 }
